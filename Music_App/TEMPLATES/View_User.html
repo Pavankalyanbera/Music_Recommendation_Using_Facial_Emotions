@@ -1,0 +1,53 @@
+{% extends 'Base.html'%}
+    {% block content%}
+    {% if messages %}
+        {% for message in messages %}
+         {% if message.tags %}  <script>alert("{{ message }}")</script> {% endif %}
+
+        {% endfor %}
+
+    {% endif %}
+    {%load static%}
+   <style>
+    .box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 50px;
+}
+
+.box > div { /*The > denotes only the first or immediate child will be affected*/
+  width: 700px;
+  height: auto;
+  /*border: dotted;
+*/
+}
+</style>
+<div style="background-image:  url('/media/bg1.png'); background-repeat:no-repeat;background-size:cover;  height:500px; width:100%;">
+<div class="box">
+    <div class="shadow p-3 mb-5 rounded">
+        <table class="table table-dark table-striped-columns table-hover">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Name</th>
+                    <th>Age</th>
+                    <th>Phone</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                {%for i in details%}
+                <tr>
+                    <td>{{i.id}}</td>
+                    <td>{{i.Name}}</td>
+                    <td>{{i.age}}</td>
+                    <td>{{i.phonenumber}}</td>
+                </tr>
+                {%endfor%}
+            </tbody>
+        </table>
+    </div>
+</div>
+</div>
+    {% endblock %}

@@ -1,0 +1,57 @@
+{"intents": [
+    {"tag": "greeting",
+     "patterns": ["Hi", "Hey", "Is anyone there?", "Hie","Hello", "Hay"],
+     "responses": ["Hello", "Hi", "Hi there"]
+    },
+    {"tag": "goodbye",
+     "patterns": ["Bye", "See you later", "Goodbye"],
+     "responses": ["See you later", "Have a nice day", "Bye! Come back again"]
+    },
+    {"tag": "thanks",
+     "patterns": ["Thanks", "Thank you", "That's helpful", "Thanks for the help"],
+     "responses": ["Happy to help!", "Any time!", "My pleasure", "You're most welcome!"]
+    },
+    {"tag": "about",
+     "patterns": ["Who are you?", "What are you?", "Who you are?" ],
+     "responses": ["I.m TechBot, your bot assistant", "I'm TechBot, an Artificial Intelligent bot"]
+    },
+    {"tag": "name",
+    "patterns": ["what is your name", "what should I call you", "whats your name?"],
+    "responses": ["You can call me TechBot.", "I'm TechBot!", "Just call me as TechBot"]
+    },
+    {"tag": "help",
+    "patterns": ["Could you help me?", "give me a hand please", "Can you help?", "What can you do for me?", "I need a support", "I need a help", "support me please"],
+    "responses": ["Tell me how can assist you", "Tell me your problem to assist you", "Yes Sure, How can I support you"]
+    },
+    {"tag": "thanks",
+    "patterns": ["Thanks", "Thank you", "That's helpful", "Awesome, thanks", "Thanks for helping me"],
+    "responses": ["Happy to help!", "Any time!", "My pleasure"],
+    "context": [""]
+    },
+    {"tag": "Happy",
+    "patterns": ["I feel good today","Happy Songs","Recommend me Happy songs"],
+    "responses": ["https://www.youtube.com/results?search_query=happy+songs"],
+    "context": [""]
+    },
+    {"tag": "Sad",
+    "patterns": ["I feel sad today","sad Songs","Recommend me sad songs","sad"],
+    "responses": ["https://www.youtube.com/results?search_query=sad+songs"],
+    "context": [""]
+    },
+    {"tag": "Surprise",
+    "patterns": ["Surprise","Surprise Songs","Recommend me Surprise songs"],
+    "responses": ["https://www.youtube.com/results?search_query=Surprise+songs"],
+    "context": [""]
+    },
+    {"tag": "Neutral",
+    "patterns": ["Neutral","Neutral Songs","Recommend me Neutral songs"],
+    "responses": ["https://www.youtube.com/results?search_query=Neutral+songs"],
+    "context": [""]
+    },
+    {"tag": "Angry",
+    "patterns": ["Angry","Angry Songs","Recommend me Angry songs"],
+    "responses": ["https://www.youtube.com/results?search_query=Angry+songs"],
+    "context": [""]
+    }
+        ]
+}

@@ -1,0 +1,17 @@
+{% extends 'Base.html'%}
+    {% block content%}
+    {% if messages %}
+        {% for message in messages %}
+         {% if message.tags %}  <script>alert("{{ message }}")</script> {% endif %}
+
+        {% endfor %}
+
+    {% endif %}
+    {%load static%}
+    <br>
+    <br>
+    <br>
+    <a href="" class="btn btn-secondary">Chat</a>
+    {% endblock %}
+
+    
